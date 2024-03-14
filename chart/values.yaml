@@ -13,6 +13,7 @@ fullnameOverride: ""
 installer:
   hostEtcContainerdPath: /etc/containerd
   hostBinPath: /usr/local/bin
+  containerdConfigFileName: config.toml
 
 podAnnotations: {}
 
