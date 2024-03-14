@@ -41,7 +41,7 @@ spec:
             privileged: true
           env:
             - name: HOST_CONTAINERD_CONFIG
-              value: /host/etc/containerd/config.toml
+              value: /host/etc/containerd/{{ .Values.installer.containerdConfigFileName | default "config.toml" }}
             - name: HOST_BIN
               value: /host/bin
           volumeMounts:
